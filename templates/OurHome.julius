@@ -1,0 +1,19 @@
+
+
+var acctAddress = document.getElementByID("faucetForm").value;
+var form = document.getElementByID("faucetForm");
+
+window.addEventListener("load", function () {
+  function sendData() {
+    var XHR = new XMLHttpRequest();
+    var FD = new FormData(form);
+
+    $.get("http://api.blockapps.net/getether/" + FD)
+  }
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    sendData();
+  });
+
+});
