@@ -1,1 +1,13 @@
-<h1>The Glorious Ether Faucet</h1>
+<script src="/static/jquery.js">
+
+<h1>The Glorious Ether Faucet
+<div id="faucet-container">
+  <form id="faucet-form">
+    <input id="faucet-address" type="text" name="address">
+    <br>
+    <br>
+    <input id="faucet-submit" type="submit" value="Get Ether NOW!">
+
+    <p>Press the button and
+      <a>BlockApps
+      will send you ether
