@@ -18,9 +18,9 @@ body {
 }
 
 #faucet-submit {
-  width: 40em;
-  height: 4em;
-  font-size:2em;
+  //width: 10em;
+  //height: 1em;
+  font-size:1.5em;
 }
 
 h1 {
