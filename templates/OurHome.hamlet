@@ -9,5 +9,5 @@
     <input id="faucet-submit" type="submit" value="Get Ether NOW!">
 
     <p>Press the button and
-      <a>BlockApps
+      <a href="http://stablenet.blockapps.net/">BlockApps
       will send you ether
