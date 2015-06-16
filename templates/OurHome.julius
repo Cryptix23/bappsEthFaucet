@@ -1,16 +1,30 @@
 
 
-var acctAddress = document.getElementByID("faucetForm").value;
-var form = document.getElementByID("faucetForm");
+var acctAddress = $("#faucet-address").value;
+var form = $("#faucet-form");
 
 window.addEventListener("load", function () {
   function sendData() {
-    var FD = new FormData(form);
+    //var FD = new FormData(form);
 
-    $.get("http://api.blockapps.net/getether/" + FD)
+    //$.get("http://api.blockapps.net/getether/" + FD)
+
+    var nonce = 0;
+    var gasPrice = 100000;
+    var gasLimit = 1000000;
+    var data = 'abcdddee';
+    var privateKey = 'e331b6d69882b4cb4ea581d88e0b604039a3de5967688d3dcffdd2270c0fd109';
+    var url = 'http://api.blockapps.net/includetransaction';
+    var value =  0;
+
+    address=$("#faucet-address").val();
+
+    console.log("trying to pushTX");
+    api.pushTX(nonce,gasPrice,gasLimit,address,value,data,privateKey,url);
+    console.log("after pushTX");
   }
 
-  form.addEventListener("submit", function(event) {
+  $("form").submit(function(){
     event.preventDefault();
     sendData();
   });

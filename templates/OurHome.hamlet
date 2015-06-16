@@ -1,13 +1,15 @@
 <script src="/static/jquery.js">
+<script src="http://api.blockapps.net/includetransaction/pushtx.js"></script>
 
 <h1>The Glorious Ether Faucet
 <div id="faucet-container">
   <form id="faucet-form">
-    <input id="faucet-address" type="text" name="address">
+    <input id="faucet-address" type="text" name="address" placeholder="put address here">
     <br>
     <br>
     <input id="faucet-submit" type="submit" value="Get Ether NOW!">
 
     <p>Press the button and
-      <a href="http://stablenet.blockapps.net/">BlockApps
+      <a href="http://stablenet.blockapps.net/">
+        <img id="balogo" src="/static/blockapps.png">
       will send you ether

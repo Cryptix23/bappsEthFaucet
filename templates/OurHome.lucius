@@ -36,3 +36,31 @@ h1 {
 button {
   color:#000;
 }
+
+#balogo {
+  width: 250px;
+  height: 165px;
+  vertical-align:middle;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #030;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #030;
+   opacity:  1;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #030;
+   opacity:  1;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #030;
+}
+
+a {
+  text-decoration: none;
+}
